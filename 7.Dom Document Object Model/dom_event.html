@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Kavramı</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 200px;
+            background-color: teal;
+            padding: 2rem 2rem;
+            font-size: 2rem;
+            color: white;
+        }
+        .link, .link:visited{
+            text-decoration: none;
+            color: white;
+            font-size: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        .link:hover{
+            color: #333;
+        }
+        .yazi{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="https://www.google.com" method="post" id="form">
+            <input id="ad" type="text" placeholder="Adınız...">
+            <select name="sehir" id="sehir">
+                <option value="1">Bursa</option>
+                <option value="2">Elazığ</option>
+                <option value="3">Ankara</option>
+            </select>
+            <button type="button">Normal Buton</button>
+            <button type="reset">Temizle</button>
+            <button type="submit">Gönder</button> 
+        </form>
+
+        <a href="#" class="link" >Blog Sitem</a><!--target= "_blank demek konsolu kapatıyor"-- yeni sayfada açıyor-->
+        <p class="yazi">Merhaba</p>
+    </div>
+
+    <div class="parent">
+
+        <div class="child">
+
+            <h3 class="item child-item">Merhaba</h3>
+            <h3 class="item child-item">Merhaba</h3>
+            <h3 class="item child-item">Merhaba</h3>
+            <h3 class="item child-item">Merhaba</h3>
+        </div>
+
+    </div>
+    
+    <script src="/7.Dom Document Object Model/5.dom_event.js"></script>
+</body>
+</html>
